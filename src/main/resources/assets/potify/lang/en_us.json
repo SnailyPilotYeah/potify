@@ -2,13 +2,17 @@
   "item.minecraft.potion.effect.trailed": "Potion of Trailing",
   "item.minecraft.potion.effect.grounded": "Potion of Grounding",
   "item.minecraft.potion.effect.slipped": "Potion of Slipping",
+  "item.minecraft.potion.effect.frozen": "Potion of Freezing",
   "item.minecraft.splash_potion.effect.trailed": "Splash Potion of Trailing",
   "item.minecraft.splash_potion.effect.grounded": "Splash Potion of Grounding",
   "item.minecraft.splash_potion.effect.slipped": "Splash Potion of Slipping",
+  "item.minecraft.splash_potion.effect.frozen": "Splash Potion of Freezing",
   "item.minecraft.lingering_potion.effect.trailed": "Lingering Potion of Trailing",
   "item.minecraft.lingering_potion.effect.grounded": "Lingering Potion of Grounding",
   "item.minecraft.lingering_potion.effect.slipped": "Lingering Potion of Slipping",
+  "item.minecraft.lingering_potion.effect.frozen": "Lingering Potion of Freezing",
   "effect.potify.trailed": "Trailed",
   "effect.potify.grounded": "Grounded",
-  "effect.potify.slipped": "Slipped"
+  "effect.potify.slipped": "Slipped",
+  "effect.potify.frozen": "Frozen"
 }

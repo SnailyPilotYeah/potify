@@ -4,7 +4,8 @@
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"GroundedEffectMixin",
-		"SlipperEffectMixin"
+		"SlipperEffectMixin",
+		"FrozenEffectMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

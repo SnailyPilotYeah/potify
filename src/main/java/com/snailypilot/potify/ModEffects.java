@@ -1,5 +1,6 @@
 package com.snailypilot.potify;
 
+import com.snailypilot.potify.effect.FrozenEffect;
 import com.snailypilot.potify.effect.GroundedEffect;
 import com.snailypilot.potify.effect.SlippedEffect;
 import com.snailypilot.potify.effect.TrailedEffect;
@@ -19,6 +20,9 @@ public class ModEffects implements ModInitializer {
 
     public static final Holder<MobEffect> SLIPPED =
             Registry.registerForHolder(BuiltInRegistries.MOB_EFFECT, Identifier.fromNamespaceAndPath(Potify.MOD_ID, "slipped"), new SlippedEffect());
+
+    public static final Holder<MobEffect> FROZEN =
+            Registry.registerForHolder(BuiltInRegistries.MOB_EFFECT, Identifier.fromNamespaceAndPath(Potify.MOD_ID, "frozen"), new FrozenEffect());
 
     @Override
     public void onInitialize() {

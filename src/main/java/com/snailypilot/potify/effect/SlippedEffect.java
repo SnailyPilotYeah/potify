@@ -16,7 +16,7 @@ public class SlippedEffect extends MobEffect {
 
     @Override
     public boolean applyEffectTick(ServerLevel level, LivingEntity entity, int amplifier) {
-        // Effect handled by SlipperEffectMixin.java
+        // Slipper handled by SlipperEffectMixin.java
         return super.applyEffectTick(level, entity, amplifier);
     }
 }

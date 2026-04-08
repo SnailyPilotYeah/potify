@@ -43,6 +43,15 @@ public class ModPotions implements ModInitializer {
                                     3600))
             );
 
+    public static final Holder<Potion> FREEZING_POTION =
+            Registry.registerForHolder(
+                    BuiltInRegistries.POTION,
+                    Identifier.fromNamespaceAndPath(Potify.MOD_ID, "frozen"),
+                    new Potion("frozen",
+                            new MobEffectInstance(ModEffects.FROZEN,
+                                    3600))
+            );
+
     @Override
     public void onInitialize() {
         FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
@@ -60,6 +69,11 @@ public class ModPotions implements ModInitializer {
                     Potions.WATER,
                     Item.byBlock(Blocks.POWDER_SNOW),
                     SLIPPING_POTION
+            );
+            builder.addMix(
+                    Potions.WATER,
+                    Item.byBlock(Blocks.BLUE_ICE),
+                    FREEZING_POTION
             );
         });
     }

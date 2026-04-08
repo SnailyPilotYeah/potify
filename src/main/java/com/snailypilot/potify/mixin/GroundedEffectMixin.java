@@ -13,12 +13,9 @@ public class GroundedEffectMixin {
     private void onJumpFromGround(CallbackInfo info) {
         LivingEntity entity = (LivingEntity) (Object) this;
 
-        // Check if the entity has the Grounded effect
         if (entity.hasEffect(ModEffects.GROUNDED)) {
-            // Cancel the normal jump
             info.cancel();
 
-            // Apply a reduced jump
             entity.setDeltaMovement(entity.getDeltaMovement().add(0.0D, 0.42F * 0.6D, 0.0D));
 
             if (entity.isSprinting()) {
