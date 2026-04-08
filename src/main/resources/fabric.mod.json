@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "potify",
+	"version": "${version}",
+	"name": "Potify",
+	"description": "A Vanilla+ mod that adds ome new potions to the game.",
+	"authors": [
+		"SnailyPilot"
+	],
+	"contact": {
+		"homepage": "https://snailypilot.pages.dev",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/potify/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.snailypilot.potify.Potify",
+			"com.snailypilot.potify.ModPotions",
+			"com.snailypilot.potify.ModEffects"
+		],
+		"client": [
+			"com.snailypilot.potify.PotifyClient"
+		],
+		"fabric-datagen": [
+			"com.snailypilot.potify.PotifyDataGenerator"
+		]
+	},
+	"mixins": [
+		"potify.mixins.json",
+		{
+			"config": "potify.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.6",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

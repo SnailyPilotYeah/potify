@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "com.snailypilot.potify.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"GroundedEffectMixin",
+		"SlipperEffectMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
